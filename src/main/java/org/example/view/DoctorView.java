@@ -95,6 +95,7 @@ public class DoctorView extends VerticalLayout {
         addNewBtn.addClickListener(e -> editor.getModalWindow().open());
 
         showStatisticsBtn.addClickListener(e -> {
+            statisticsView.updateStatistics();
             statisticsView.getStatistics().open();
         });
     }

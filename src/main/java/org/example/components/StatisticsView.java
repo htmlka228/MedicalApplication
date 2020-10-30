@@ -60,4 +60,8 @@ public class StatisticsView implements KeyNotifier {
         statistics.add(new VerticalLayout(close, grid));
         statistics.setWidth("calc(100vw - (48*var(--lumo-space-m)))");
     }
+
+    public void updateStatistics(){
+        grid.setItems(doctorService.getDoctors());
+    }
 }
